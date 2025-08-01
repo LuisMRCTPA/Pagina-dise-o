@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo Web Espacial - CTP de Aserrí</title>
+    <link rel="stylesheet" href="/css y su primo raro/styles.css">
+    <link rel="stylesheet" href="/css y su primo raro/style.Sass">
+</head>
+
+<body>
+    <canvas id="starfield"></canvas>
+    <header>
+        <img src="/images/logo.webp" alt="Logo CTP de Aserrí" class="logo">
+        <h1>¡Explora el universo del Desarrollo Web!</h1>
+        <p class="subtitulo">Feria de Especialidades Técnicas 2025</p>
+    </header>
+    <main>
+        <section class="galaxia">
+            <h2>¿Qué aprenderás en nuestra especialidad?</h2>
+            <div class="contenedor-cards">
+                <div class="card" title="Componente estructural HTML: representa una
+tecnología como planeta">
+                    <h3>HTML5</h3>
+                    <p>Construye la estructura de páginas web.</p>
+                </div>
+                <div class="card tooltip">
+                    <h3>HTML5</h3>
+                    <p>Construye la estructura de páginas web.</p>
+                    <span class="tooltip-text">Componente estructural: HTML define la
+estructura de la interfaz.</span>
+                </div>
+                <div class="card">
+                    <h3>CSS3</h3>
+                    <p>Estiliza con efectos visuales sorprendentes.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Agrega interacción y dinamismo galáctico.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript
+                        <span class="tooltip-icon">
+<span class="tooltip-text">Lenguaje de comportamiento: añade
+interacción galáctica a la
+página.</span>
+                        </span>
+                    </h3>
+                    <p>Agrega interacción y dinamismo galáctico.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño Responsivo</h3>
+                    <p>Adapta tus sitios a cualquier planeta... o dispositivo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <h2> Recolecta los Códigos Perdidos y Atrapa las Estrellas del Conocimiento
+            </h2>
+            <p>Mueve tu nave y atrapa solo los fragmentos correctos de código web, mientras atrapas las estrellas del conocimiento.
+            </p>
+            <div class="controls">
+                <h1>Atrapa el codigo</h1>
+                <button id="startCodeGame"><img src="/images/play-solid-full.png" alt=""></button>
+                <button id="stopCodeGame"><img src="/images/pause-solid-full.png" alt=""></button>
+                <button id="exitCodeGame"><img src="/images/arrow-right-from-bracket-solid-full.png" alt=""></button>
+                <br>
+                <h2>Practica tu punteria
+                </h2>
+                <button id="startStarGame"><img src="/images/play-solid-full.png" alt=""></button>
+                <button id="stopStarGame"><img src="/images/pause-solid-full.png" alt=""></button>
+                <button id="exitStarGame"><img src="/images/arrow-right-from-bracket-solid-full.png" alt=""></button>
+            </div>
+            <div class="tetris-container">
+                <h1>TETRIS</h1>
+                <canvas id="tetris-canvas" width="300" height="600"></canvas>
+                <div class="tetris-info">
+                    <div>Score: <span id="tetris-score">0</span></div>
+                    <button id="tetris-start-btn">Start/Pause</button>
+                </div>
+            </div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <h1>Snake Game with
+                <div class="geeks">CTPA</div>
+            </h1>
+            <br>
+            <canvas id="board"></canvas>
+            <audio id="collectSound" src="https://www.soundjay.com/button/sounds/button-16.mp3"></audio>
+            <div class="juego-area" id="juegoArea">
+                <br>
+                <div class="estrella" id="estrella"></div>
+            </div>
+            <p id="puntuacion">Puntos: 0</p>
+        </section>
+        <section class="galeria">
+            <h2>Proyectos Espaciales</h2>
+            <div class="contenedor-proyectos">
+                <div class="proyecto">
+                    <img src="proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Landing de una nave</h3>
+                </div>
+                <div class="proyecto">
+                    <img src="proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Blog del universo</h3>
+                </div>
+                <div class="proyecto">
+                    <img src="proyecto3.jpg" alt="Proyecto 3">
+                    <h3>Tienda espacial</h3>
+                </div>
+            </div>
+            <p>Escanea el código para más información:</p>
+            <img src="/images/qrcode_ctpdeaserridiurno.com.png" alt="QR de contacto" class="qr">
+        </section>
+
+        <div class="categories-section">
+            <a href="/ninos-familia" class="category-item">
+                <img src="/images/ciber.webp" alt="Niños y Familia" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Ciberseguridad</div>
+                    <div class="category-subtitle">Asegura tu futuro</div>
+                    <div class="category-description"></div>
+                </div>
+            </a>
+
+            <a href="/reality" class="category-item">
+                <img src="/images/desarrollo.jpg" alt="Reality" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Desarrollo Web</div>
+                    <div class="category-subtitle">Desarrolla el futuro</div>
+                    <div class="category-description"></div>
+                </div>
+            </a>
+
+            <a href="/cine" class="category-item">
+                <img src="/images/diseño2.jpg" alt="Cine" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Diseño Grafico</div>
+                    <div class="category-subtitle">Diseña la campaña de marketing del futuro</div>
+                    <div class="category-description"></div>
+                </div>
+            </a>
+
+            <a href="/drama" class="category-item">
+                <img src="/images/Adobe Express - file.jpg" alt="Drama" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Soporte TI</div>
+                    <div class="category-subtitle">Aprende a ser parte del equipo</div>
+                    <div class="category-description"></div>
+                </div>
+            </a>
+
+            <a href="/comedia" class="category-item">
+                <img src="/images/futuro.jpg" alt="Comedia" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <div class="category-title">Millones de oportunidades</div>
+                    <div class="category-subtitle">Trabaja para tener el futuro que te mereces</div>
+                    <div class="category-description"></div>
+                </div>
+            </a>
+        </div>
+
+        <script>
+            // Función para manejar clics en categorías
+            const categoryItems = document.querySelectorAll('.category-item');
+
+            categoryItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const href = item.getAttribute('href');
+                    console.log(`Navegando a: ${href}`);
+
+                    // Aquí puedes agregar tu lógica de navegación
+                    // Por ejemplo: window.location.href = href;
+                    // O usar un router si es una SPA
+                    alert(`Navegando a la sección: ${href}`);
+                });
+            });
+        </script>
+    </main>
+
+
+    <footer>
+        <p>CTP de Aserrí - Especialidad Desarrollo Web </p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/tetris.js"></script>
+</body>
+
+</html>
